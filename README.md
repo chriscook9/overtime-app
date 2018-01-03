@@ -19,6 +19,9 @@ Key Reqirement: company needs documentation that salaried employees did or did n
 ## UI:
 - Bootstrap -> formatting
 
+##Refactor TODOS:
+- Refactor user assocition integration test in post_spec
+
 
 
 
