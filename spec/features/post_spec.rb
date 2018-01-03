@@ -21,8 +21,8 @@ describe 'navigate' do
     end
 
     it 'has a title of Posts' do
-      post1 = @post = Post.create(date: Date.today, rationale: "Post1")
-      post2 = @post = Post.create(date: Date.today, rationale: "Post2")
+      post1 = @post = Post.create(date: Date.today, rationale: "Post1" user_id @user.id)
+      post2 = @post = Post.create(date: Date.today, rationale: "Post2" user_id @user.id)
       visit posts_path
       expect(page).to have_content(/Post1|Post2/)
     end
