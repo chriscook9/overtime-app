@@ -22,6 +22,13 @@ puts "1 Admin User created"
                 user_id: @user.id, 
                 overtime_request: 2.5,
                 phone: "3853991319")
+
+100.times do |audit_log|
+  post.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
+end
+
+  100.times do |audit_log|
+  AuditLog.create!(user_id: User.last.id, status: 0, start_date: (Date.today - 6.days))
 end
 
 puts "100 Posts have been create"
