@@ -1,5 +1,4 @@
-class ApplicationMailer < ActionMailer::Base
-  default from: 'mailer@devcamp.com'
-  layout 'mailer'
-  end
-end
+# class ApplicationMailer < ActionMailer::Base
+#   default from: 'admin@test.com'
+#   layout 'mailer'
+# end
