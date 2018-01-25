@@ -10,3 +10,5 @@ class CreateAuditLogs < ActiveRecord::Migration
     end
   end
 end
+
+# https://git.heroku.com/seven-overtime.git
