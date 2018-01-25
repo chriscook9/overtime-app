@@ -1,4 +1,4 @@
-class User < ApplicationRecord
+class User < ActiveRecord::Base
   has_many :posts
   has_many :audit_logs
   # Include default devise modules. Others available are:
@@ -10,9 +10,8 @@ class User < ApplicationRecord
 
   PHONE_REGEX = /\A[0-9]*\Z/
 
-
   validates_format_of :phone, with: PHONE_REGEX
-  
+
   validates :phone, length: { is: 10 }
 
   def full_name
