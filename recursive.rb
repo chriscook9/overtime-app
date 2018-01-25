@@ -169,10 +169,39 @@
 # stack_of_cards << Card.new
 # stack_of_cards << Card.new
 
-"Ruby is a beautiful language" .start_with?(Ruby)
+# "Ruby is a beautiful language" .start_with?(Ruby)
 
-"I cant work with any other language but Ruby" .end_with?('Ruby')
+# "I cant work with any other language but Ruby" .end_with?('Ruby')
 
-"I am a nudist" .index('R')
+# "I am a nudist" .index('R')
 
-"ThiS iS A vErY ComPlEx SenTeNcE" .swapcase
+# "ThiS iS A vErY ComPlEx SenTeNcE" .swapcase
+
+
+
+
+
+
+
+def choice
+  p "choose a number"
+end
+
+def 
+  num(gets.chomp.to_i)
+end
+
+
+
+arr = [1,2,3].product [4,5]
+ 
+
+
+
+
+
+
+
+
+
+
