@@ -26,3 +26,4 @@ describe 'Homepage' do
 
   expect(audit_log.reload.status).to eq('confirmed')
 end
+end
