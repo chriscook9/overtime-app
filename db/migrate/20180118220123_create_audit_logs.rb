@@ -1,4 +1,4 @@
-class CreateAuditLogs < ActiveRecord::Migration[4.2]
+class CreateAuditLogs < ActiveRecord::Migration[5.1]
   def change
     create_table :audit_logs do |t|
       t.references :user, index: true, foreign_key: true

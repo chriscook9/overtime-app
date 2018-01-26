@@ -1,3 +1,5 @@
+require "administrate/base_dashboard"
+
 class PostDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
@@ -9,7 +11,7 @@ class PostDashboard < Administrate::BaseDashboard
     user: Field::BelongsTo.with_options(searchable: false),
     id: Field::Number.with_options(searchable: false),
     date: Field::DateTime.with_options(searchable: false),
-    work_performed: Field::Text.with_options(searchable: true),
+    rationale: Field::Text.with_options(searchable: true),
     created_at: Field::DateTime.with_options(searchable: false),
     updated_at: Field::DateTime.with_options(searchable: false),
     status: Field::Text.with_options(searchable: true),
@@ -24,7 +26,7 @@ class PostDashboard < Administrate::BaseDashboard
     :user,
     :status,
     :date,
-    :work_performed,
+    :rationale,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -34,7 +36,7 @@ class PostDashboard < Administrate::BaseDashboard
     :status,
     :id,
     :date,
-    :work_performed,
+    :rationale,
     :created_at,
     :updated_at,
   ].freeze
@@ -45,7 +47,7 @@ class PostDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :user,
     :date,
-    :work_performed,
+    :rationale,
   ].freeze
 
   # Overwrite this method to customize how posts are displayed
